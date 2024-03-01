@@ -1,0 +1,111 @@
+$color-blue: #0056f3;
+$gray: #cacaca;
+$border: 1px solid $gray;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mainContainer {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .title {
+    margin: 0.5rem 0;
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+.box {
+  width: 80%;
+  border: $border;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+}
+
+.subContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.addTodoBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  height: 3vh;
+  margin-bottom: 1rem;
+  form {
+    width: 90%;
+    height: 90%;
+    display: flex;
+    justify-content: space-between;
+    input {
+      width: 80%;
+      border: none;
+      border-bottom: $border;
+    }
+    button {
+      width: 15%;
+      background-color: $color-blue;
+      color: white;
+      border: none;
+      border-radius: 0.5rem;
+    }
+  }
+}
+
+.todoListBox {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 90%;
+  .listBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    li {
+      list-style: none;
+      margin-bottom: 0.5rem;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      padding-bottom: 0.5rem;
+      border-bottom: $border;
+      .num {
+        background-color: $color-blue;
+        border-radius: 50%;
+        height: fit-content;
+        color: white;
+        width: 20px;
+        height: 20px;
+        font-size: 0.8rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .content {
+        width: 75%;
+      }
+    }
+    button {
+      border: none;
+      border-radius: 0.2rem;
+      font-size: 0.8rem;
+      background-color: $gray;
+    }
+  }
+}
